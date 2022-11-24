@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HeaderPage/>
+    <FasciaAzzurra/>
+    <MainPage/>
+    <FooterPage/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HeaderPage from './HeaderPage.vue';
+import FasciaAzzurra from './FasciaAzzurra.vue';
+import MainPage from './MainPage.vue';
+import FooterPage from './FooterPage.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
+  components: { HeaderPage, FasciaAzzurra },
+  comments: {
+    HeaderPage,
+    FasciaAzzurra,
+    MainPage,
+    FooterPage,
   },
+
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+
 </style>
