@@ -2,7 +2,7 @@
   <div class="main_page">
     <div>
       <ol>
-        <li><h1>DC COMICS</h1></li>
+        <li><h2>DC COMICS</h2></li>
         <li>Characters</li>
         <li>Comics</li>
         <li>Movies</li>
@@ -12,14 +12,14 @@
         <li>News</li>
       </ol>
       <ol>
-        <li><h1>SHOP</h1></li>
+        <li><h2>SHOP</h2></li>
         <li>Shop DC</li>
         <li>Shop DC Collectibles</li>
       </ol>
     </div>
     <div>
       <ol>
-        <li><h1>DC</h1></li>
+        <li><h2>DC</h2></li>
         <li>Terms of USE</li>
         <li>Privacy polici (New)</li>
         <li>Ad Choices</li>
@@ -35,7 +35,7 @@
     </div>
     <div>
       <ol>
-        <li><h1>SITES</h1></li>
+        <li><h2>SITES</h2></li>
         <li>DC</li>
         <li>MAD Magazine</li>
         <li>DC Kids</li>
@@ -54,8 +54,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- .main_page{
-  background-image: url('./img/dc-comics-empty-layout.png');
- }
+  .main_page{
+    display: flex;
+    gap: 1rem;
+    background-image: url('./img/footer-bg.jpg');
+  }
+  ol{
+    list-style: none;
+  }
+  li{
+    color: rgb(186, 186, 186);
+  }
+  h2{
+    margin:.2rem 0rem;
+    color: white;
+  }
 
 </style>

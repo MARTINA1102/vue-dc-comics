@@ -14,8 +14,7 @@ import MainPage from './MainPage.vue';
 import FooterPage from './FooterPage.vue';
 
 export default {
-  components: { HeaderPage, FasciaAzzurra },
-  comments: {
+  components: {
     HeaderPage,
     FasciaAzzurra,
     MainPage,
